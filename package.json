@@ -1,0 +1,59 @@
+{
+  "name": "the-americans-api",
+  "version": "1.0.0",
+  "description": "REST API for The Americans",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "NODE_ENV=test jest --watchAll --verbose --runInBand",
+    "cover": "NODE_ENV=test jest --verbose --runInBand --coverage",
+    "start": "node src/index.js",
+    "postinstall": "link-module-alias"
+  },
+  "_moduleAliases": {
+    "src": "./src",
+    "middleware": "./src/middleware",
+    "models": "./src/models",
+    "routes": "./src/routes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helloalexdodd/the-americans-api"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "Americans",
+    "tv"
+  ],
+  "author": "Alex Dodd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloalexdodd/the-americans-api/issues"
+  },
+  "homepage": "https://github.com/helloalexdodd/the-americans-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "joi": "^17.2.0",
+    "joi-objectid": "^3.0.1",
+    "mongoose": "^5.9.27",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.2.2",
+    "link-module-alias": "^1.2.0",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
