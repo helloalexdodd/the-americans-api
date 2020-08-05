@@ -3,8 +3,9 @@ const config = require('config');
 
 const app = express();
 app.use(express.json());
+
 require('../config/database')();
-require('routes/index')();
+require('routes/index')(app);
 
 const port = config.get('port') || 4848;
 
