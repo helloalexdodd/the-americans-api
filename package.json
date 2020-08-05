@@ -5,10 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node src/index.js",
-    "test": "NODE_ENV=test jest --watchAll --verbose --runInBand",
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "test-watch": "NODE_ENV=test jest --watchAll --verbose --runInBand",
     "cover": "NODE_ENV=test jest --verbose --runInBand --coverage",
     "start": "node src/index.js",
-    "postinstall": "link-module-alias"
+    "postinstall": "link-module-alias",
+    "lint": "eslint . --ext .js --fix"
   },
   "_moduleAliases": {
     "src": "./src",
@@ -47,13 +49,28 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
     "jest": "^26.2.2",
     "link-module-alias": "^1.2.0",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "supertest": "^4.0.2"
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }

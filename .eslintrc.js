@@ -8,7 +8,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 11,
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', 'no-loops'],
   rules: {
     'prettier/prettier': ['error'],
   },

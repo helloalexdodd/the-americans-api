@@ -19,14 +19,8 @@ const aliasSchema = new mongoose.Schema({
   murders: [characterSchema],
   death: deathSchema,
   informants: [characterSchema],
-  episodes: {
-    type: [episodeSchema],
-    required: true,
-  },
-  seasons: {
-    type: [seasonSchema],
-    required: true,
-  },
+  episodes: [episodeSchema],
+  seasons: [seasonSchema],
 });
 
 const Alias = mongoose.model('Alias', aliasSchema);

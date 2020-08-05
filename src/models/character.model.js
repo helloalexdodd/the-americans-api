@@ -12,22 +12,11 @@ const characterSchema = new mongoose.Schema({
     require: true,
   },
   occupation: String,
+  quote: String,
   murders: [this],
   death: deathSchema,
   informants: [this],
   alias: [aliasSchema],
-  episodes: {
-    type: [episodeSchema],
-    required: true,
-  },
-  seasons: {
-    type: [seasonSchema],
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
   isInformant: {
     type: Boolean,
     required: true,
@@ -36,6 +25,12 @@ const characterSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  image: {
+    type: String,
+    required: true,
+  },
+  episodes: [episodeSchema],
+  seasons: [seasonSchema],
 });
 
 const Character = mongoose.model('Character', characterSchema);
