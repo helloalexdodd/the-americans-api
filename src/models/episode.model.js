@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 // const Joi = require('joi');
 
-const { characterSchema } = require('./character.model');
-const { deathSchema } = require('./death.model');
-const { aliasSchema } = require('./alias.model');
-const { seasonSchema } = require('./season.model');
+// const { characterSchema } = require('./character.model');
+// const { deathSchema } = require('./death.model');
+// const { aliasSchema } = require('./alias.model');
+// const { seasonSchema } = require('./season.model');
 
 const episodeSchema = new mongoose.Schema({
   episodeInSeason: {
@@ -15,15 +15,15 @@ const episodeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  season: {
-    type: seasonSchema,
-    required: true,
-  },
-  characters: [{ type: characterSchema, required: true }],
-  charactersIntroduced: [{ type: characterSchema, required: true }],
-  deathsInEpisode: [{ type: deathSchema }],
-  aliasInEpisode: [{ type: aliasSchema }],
-  previouslyOnTheAmericans: characterSchema,
+  // season: {
+  //   type: seasonSchema,
+  //   required: true,
+  // },
+  // characters: [{ type: characterSchema, required: true }],
+  // charactersIntroduced: [{ type: characterSchema, required: true }],
+  // deathsInEpisode: [{ type: deathSchema }],
+  // aliasInEpisode: [{ type: aliasSchema }],
+  // previouslyOnTheAmericans: characterSchema,
 });
 
 const Episode = mongoose.model('Episode', episodeSchema);

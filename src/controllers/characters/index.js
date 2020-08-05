@@ -1,12 +1,16 @@
-const { getAllCharacters } = require('./all-characters.controller');
-const { getOneCharacter } = require('./one-character.controller');
-const { getEpisodesByCharacter } = require('./episodes.controller');
-const { getInformantsByCharacter } = require('./informants.controller');
-const { getAliasByCharacter } = require('./alias.controller');
+const { getAllCharacters } = require('./get-all-characters');
+const { getOneCharacter } = require('./get-one-character');
+const createOneCharacter = require('./create-one-character');
+const { updateOneCharacter } = require('./update-one-character');
+const { getEpisodesByCharacter } = require('./get-episodes-by-character');
+const { getInformantsByCharacter } = require('./get-informants-by-character');
+const { getAliasByCharacter } = require('./get-alias-by-character');
 
 module.exports = {
   getAllCharacters,
   getOneCharacter,
+  createOneCharacter,
+  updateOneCharacter,
   getEpisodesByCharacter,
   getInformantsByCharacter,
   getAliasByCharacter,

@@ -1,21 +1,21 @@
 const mongoose = require('mongoose');
 // const Joi = require('joi');
 
-const { characterSchema } = require('./character.model');
-const { deathSchema } = require('./death.model');
-const { episodeSchema } = require('./episode.model');
-const { aliasSchema } = require('./alias.model');
+// const { characterSchema } = require('./character.model');
+// const { deathSchema } = require('./death.model');
+// const { episodeSchema } = require('./episode.model');
+// const { aliasSchema } = require('./alias.model');
 
 const seasonSchema = new mongoose.Schema({
   seasonNumber: {
     type: Number,
     required: true,
   },
-  episodes: [episodeSchema],
-  characters: [characterSchema],
-  charactersIntroduced: [characterSchema],
-  deathsInSeason: [deathSchema],
-  aliasInSeason: [aliasSchema],
+  // episodes: [episodeSchema],
+  // characters: [characterSchema],
+  // charactersIntroduced: [characterSchema],
+  // deathsInSeason: [deathSchema],
+  // aliasInSeason: [aliasSchema],
 });
 
 const Season = mongoose.model('Season', seasonSchema);

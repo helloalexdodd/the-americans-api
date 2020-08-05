@@ -9,14 +9,15 @@
     "test-watch": "NODE_ENV=test jest --watchAll --verbose --runInBand",
     "cover": "NODE_ENV=test jest --verbose --runInBand --coverage",
     "start": "node src/server.js",
-    "postinstall": "link-module-alias",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "postinstall": "link-module-alias"
   },
   "_moduleAliases": {
     "src": "./src",
     "middleware": "./src/middleware",
     "models": "./src/models",
-    "routes": "./src/routes"
+    "routes": "./src/routes",
+    "services": "./src/services"
   },
   "repository": {
     "type": "git",
