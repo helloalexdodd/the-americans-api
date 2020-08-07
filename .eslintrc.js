@@ -17,9 +17,11 @@ module.exports = {
       alias: {
         map: [
           ['src', './src'],
-          ['middleware', './src/middleware'],
-          ['models', './src/models'],
-          ['routes', './src/routes'],
+          ['middleware', './src/lib/middleware'],
+          ['controllers', './src/lib/contollers'],
+          ['models', './src/lib/models'],
+          ['routes', './src/lib/routes'],
+          ['services', './src/lib/services'],
         ],
       },
     },

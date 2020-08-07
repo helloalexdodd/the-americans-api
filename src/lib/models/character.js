@@ -1,40 +1,37 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 const Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
 
-const { aliasSchema } = require('./alias.model');
-const { deathSchema } = require('./death.model');
-const { episodeSchema } = require('./episode.model');
-const { seasonSchema } = require('./season.model');
-
-const characterSchema = new mongoose.Schema({
+const characterSchema = new Schema({
   name: {
     type: String,
     require: true,
   },
   occupation: String,
   quote: String,
-  murders: [this],
-  death: deathSchema,
-  informants: [this],
-  alias: [aliasSchema],
-  isInformant: {
+  murders: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
+  dies: {
     type: Boolean,
-    required: true,
+    default: false,
   },
+  informants: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
+  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias' }],
   isMailRobot: {
     type: Boolean,
     default: false,
   },
+  episodes: [{ type: Schema.Types.ObjectId, ref: 'Episode' }],
+  seasons: [{ type: Schema.Types.ObjectId, ref: 'Season' }],
   image: {
     type: String,
     required: true,
   },
-  episodes: [episodeSchema],
-  seasons: [seasonSchema],
+  isInformant: {
+    type: Boolean,
+    required: true,
+  },
 });
 
-const Character = mongoose.model('Character', characterSchema);
+const Character = model('Character', characterSchema);
 
 const validateCharacter = (req) => {
   const schema = Joi.object({
@@ -42,9 +39,9 @@ const validateCharacter = (req) => {
     occupation: Joi.string(),
     quote: Joi.string(),
     murders: Joi.array().items(Joi.objectId()),
-    death: Joi.objectId(),
+    dies: Joi.boolean(),
     informants: Joi.array().items(Joi.objectId()),
-    alias: Joi.objectId(),
+    alias: Joi.array().items(Joi.objectId()),
     isInformant: Joi.boolean().required(),
     isMailRobot: Joi.boolean(),
     image: Joi.string().required(),

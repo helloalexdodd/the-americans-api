@@ -1,5 +1,5 @@
 const express = require('express');
-const { validateCharacter } = require('models/character.model');
+const { validateCharacter } = require('models/character');
 const validate = require('middleware/validate');
 const {
   getAllCharacters,

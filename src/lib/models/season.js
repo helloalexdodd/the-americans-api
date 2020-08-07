@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 // const Joi = require('joi');
 
-// const { characterSchema } = require('./character.model');
-// const { deathSchema } = require('./death.model');
-// const { episodeSchema } = require('./episode.model');
-// const { aliasSchema } = require('./alias.model');
+// const { characterSchema } = require('./character');
+// const { deathSchema } = require('./death');
+// const { episodeSchema } = require('./episode');
+// const { aliasSchema } = require('./alias');
 
 const seasonSchema = new mongoose.Schema({
   seasonNumber: {

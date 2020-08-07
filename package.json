@@ -10,14 +10,16 @@
     "cover": "NODE_ENV=test jest --verbose --runInBand --coverage",
     "start": "node src/server.js",
     "lint": "eslint . --ext .js",
-    "postinstall": "link-module-alias"
+    "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
   },
   "_moduleAliases": {
     "src": "./src",
-    "middleware": "./src/middleware",
-    "models": "./src/models",
-    "routes": "./src/routes",
-    "services": "./src/services"
+    "controllers": "./src/lib/controllers",
+    "models": "./src/lib/models",
+    "middleware": "./src/lib/middleware",
+    "routes": "./src/lib/routes",
+    "services": "./src/lib/services"
   },
   "repository": {
     "type": "git",
@@ -42,7 +44,9 @@
     "joi": "^17.2.0",
     "joi-objectid": "^3.0.1",
     "mongoose": "^5.9.27",
-    "nodemon": "^2.0.4"
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "eslint": "^7.2.0",

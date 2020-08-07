@@ -1,13 +1,19 @@
 const express = require('express');
-const config = require('config');
+const { get } = require('config');
+const getSiteMap = require('./data');
 
 const app = express();
 app.use(express.json());
 
 require('../config/database')();
 require('routes/index')(app);
+require('../config/validation')();
 
-const port = config.get('port') || 4248;
+app.get('/*', () => {
+  getSiteMap();
+});
+
+const port = get('port') || 4248;
 
 app.get('/api/v1', (req, res) => res.send('Welcome to The Americans API! 🌏🇷🇺🇺🇸🌎'));
 
