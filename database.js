@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('config');
+const { logger } = require('logger');
 
 module.exports = async () => {
   const db = config.get('mongodb');
@@ -9,5 +10,5 @@ module.exports = async () => {
     useCreateIndex: true,
     useFindAndModify: false,
   });
-  console.log(`Connected to ${db}...`);
+  logger.info(`Connected to ${db}...`);
 };

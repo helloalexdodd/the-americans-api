@@ -19,7 +19,8 @@
     "models": "./src/lib/models",
     "middleware": "./src/lib/middleware",
     "routes": "./src/lib/routes",
-    "services": "./src/lib/services"
+    "services": "./src/lib/services",
+    "logger": "./logger"
   },
   "repository": {
     "type": "git",
@@ -40,12 +41,16 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "config": "^3.3.1",
+    "csvtojson": "^2.0.10",
     "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
     "joi": "^17.2.0",
     "joi-objectid": "^3.0.1",
+    "jsdom": "^16.3.0",
     "mongoose": "^5.9.27",
     "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.4",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.1",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
@@ -60,6 +65,7 @@
     "jest": "^26.2.2",
     "link-module-alias": "^1.2.0",
     "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "supertest": "^4.0.2"
   },

@@ -1,0 +1,475 @@
+{
+  level: 'info',
+  message: 'test message 123',
+  timestamp: '2020-08-07 14:35:44'
+}
+{
+  level: 'info',
+  message: 'test message 123',
+  timestamp: '2020-08-07 14:36:03'
+}
+{
+  level: 'info',
+  message: 'test message 123',
+  timestamp: '2020-08-07 14:37:26'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:37:27'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:37:27'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:37:34'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:37:34'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:38:37'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:38:37'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:00'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:00'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:02'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:02'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:08'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:08'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:23'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:23'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:28'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:28'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:37'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:37'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:59'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:39:59'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:40:30'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:40:30'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:40:53'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:42:45'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:42:45'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:08'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:08'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:45'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:45'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:50'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:50'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:56'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:43:56'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:47:02'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:47:02'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-07 14:47:08'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-07 14:47:08'
+}
+{ message: 'App initialized on port 5000...', level: 'info' }
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info'
+}
+{ message: 'App initialized on port 5000...', level: 'info' }
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info'
+}
+{ message: 'App initialized on port 5000...', level: 'info' }
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info'
+}
+{ message: 'App initialized on port 5000...', level: 'info' }
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info'
+}
+{ message: 'App initialized on port 5000...', level: 'info' }
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:48:07',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:48:42',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:49:23',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:49:42',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:50:11',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:50:39',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:52:38',
+  message: 'converter is not a function',
+  stack: 'TypeError: converter is not a function\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:9:29)\n' +
+    '    at Object.<anonymous> (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:986:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:52:43',
+  message: 'converter is not a function',
+  stack: 'TypeError: converter is not a function\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:9:29)\n' +
+    '    at Object.<anonymous> (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:986:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:55:01',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:55:24',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  code: 'ERR_INVALID_CALLBACK',
+  level: 'error',
+  timestamp: '2020-08-08 15:56:43',
+  message: 'Callback must be a function. Received undefined',
+  stack: 'TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined\n' +
+    '    at maybeCallback (fs.js:144:9)\n' +
+    '    at Object.writeFile (fs.js:1325:14)\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:10:8)'
+}
+{
+  code: 'ERR_INVALID_CALLBACK',
+  level: 'error',
+  timestamp: '2020-08-08 15:59:13',
+  message: 'Callback must be a function. Received undefined',
+  stack: 'TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined\n' +
+    '    at maybeCallback (fs.js:144:9)\n' +
+    '    at Object.writeFile (fs.js:1325:14)\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:10:8)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:59:29',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 15:59:59',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  code: 'ERR_INVALID_CALLBACK',
+  level: 'error',
+  timestamp: '2020-08-08 16:01:26',
+  message: 'Callback must be a function. Received undefined',
+  stack: 'TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined\n' +
+    '    at maybeCallback (fs.js:144:9)\n' +
+    '    at Object.writeFile (fs.js:1325:14)\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:11:8)'
+}
+{
+  errno: -21,
+  syscall: 'open',
+  code: 'EISDIR',
+  path: './src/data/json',
+  level: 'error',
+  timestamp: '2020-08-08 16:02:03',
+  message: "EISDIR: illegal operation on a directory, open './src/data/json'",
+  stack: "Error: EISDIR: illegal operation on a directory, open './src/data/json'\n" +
+    '    at Object.openSync (fs.js:458:3)\n' +
+    '    at Object.writeFileSync (fs.js:1355:35)\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:10:8)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:07:44',
+  message: 'image is not defined',
+  stack: 'ReferenceError: image is not defined\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:17:17)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:09:31',
+  message: 'image is not defined',
+  stack: 'ReferenceError: image is not defined\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:20:17)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:15:17',
+  message: 'i.includes is not a function',
+  stack: 'TypeError: i.includes is not a function\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:14:15\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:13:28\n' +
+    '    at Array.map (<anonymous>)\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:11:35)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:23:30',
+  message: 'converter is not a function',
+  stack: 'TypeError: converter is not a function\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:9:29)\n' +
+    '    at Object.<anonymous> (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:986:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:24:52',
+  message: 'converter is not a function',
+  stack: 'TypeError: converter is not a function\n' +
+    '    at convertToJson (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:9:29)\n' +
+    '    at Object.<anonymous> (/Users/adodd/Documents/Learning/the-americans-api/src/data/convertToJson.js:17:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:986:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)\n' +
+    '    at internal/main/run_main_module.js:17:47'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 16:56:46',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 17:01:44',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 17:02:02',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
+{
+  level: 'error',
+  timestamp: '2020-08-08 17:04:17',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}
