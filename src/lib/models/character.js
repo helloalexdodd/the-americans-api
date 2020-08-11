@@ -11,8 +11,20 @@ const characterSchema = new Schema({
   occupation: String,
   quote: String,
   dies: { type: Boolean, default: false },
-  murders: [{ type: Schema.Types.ObjectId, ref: 'Death', default: [] }],
-  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias', default: [] }],
+  murders: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Death',
+      default: [],
+    },
+  ],
+  alias: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Alias',
+      default: [],
+    },
+  ],
   allegiance: String,
   image: { type: String },
   isInformant: { type: Boolean, default: false },
@@ -20,7 +32,13 @@ const characterSchema = new Schema({
   episodeCount: { type: Number },
   firstAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
   lastAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
-  episodes: [{ type: Schema.Types.ObjectId, ref: 'Episodes', require: true }],
+  episodes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Episodes',
+      require: true,
+    },
+  ],
 });
 
 characterSchema.methods.getEpisodes = (characterId) => {
@@ -48,7 +66,7 @@ const validateCharacter = (req) => {
     quote: Joi.string(),
     dies: Joi.boolean(),
     murders: Joi.array().items(Joi.objectId()),
-    alias: Joi.array().items(Joi.objectId()),
+    alias: Joi.array().items(Joi.string()),
     allegiance: Joi.string(),
     image: Joi.string(),
     isInformant: Joi.boolean(),

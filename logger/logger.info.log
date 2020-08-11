@@ -42068,3 +42068,323 @@
   level: 'info',
   timestamp: '2020-08-11 12:55:58'
 }
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:35:16'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:35:16'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:09'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:09'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:20'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:20'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:29'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:29'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:52'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:36:52'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:19'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:19'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:33'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:33'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:45'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:37:46'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:17'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:17'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:26'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:26'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:32'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:38:32'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:39:10'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:39:10'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:40:18'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:40:18'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:40:27'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:40:27'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:34'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:34'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:36'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:36'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:53'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:53'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:56'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:41:56'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:42:04'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:42:04'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:44:49'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:44:49'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:23'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:23'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:28'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:28'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:47'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:47'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:52'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:46:52'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 17:47:02'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 17:47:02'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:30:51'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:30:51'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:29'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:29'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:30'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:30'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:43'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:33:43'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:53:49'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:53:49'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:53:51'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:53:51'
+}
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-11 18:55:55'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-11 18:55:55'
+}

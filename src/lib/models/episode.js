@@ -3,6 +3,7 @@ const Joi = require('joi');
 
 const { Death } = require('./death');
 const { Alias } = require('./alias');
+const { Character } = require('./character');
 
 const episodeSchema = new Schema({
   title: { type: String, required: true },
@@ -12,16 +13,21 @@ const episodeSchema = new Schema({
   charactersInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
   deathsInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Death' }],
   aliasInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Alias' }],
-  previouslyOnTheAmericansVoice: { type: Schema.Types.ObjectId, ref: 'Character' },
+  previouslyOnTheAmericansVoice: {
+    type: Schema.Types.ObjectId,
+    ref: 'Character',
+  },
   dateAired: { type: Date, required: true },
 });
 
 episodeSchema.methods.getCharacters = () =>
   this.charactersInEpisode.map(({ _id }) => Character.find({ _id }));
 
-episodeSchema.methods.getDeaths = () => this.deathsInEpisode.map(({ _id }) => Death.find({ _id }));
+episodeSchema.methods.getDeaths = () =>
+  this.deathsInEpisode.map(({ _id }) => Death.find({ _id }));
 
-episodeSchema.methods.getAlias = () => this.aliasInEpisode.map(({ _id }) => Alias.find({ _id }));
+episodeSchema.methods.getAlias = () =>
+  this.aliasInEpisode.map(({ _id }) => Alias.find({ _id }));
 
 const Episode = model('Episode', episodeSchema);
 

@@ -1,22 +1,35 @@
 const { createLogger, format, transports } = require('winston');
 require('winston-mongodb');
 
-const { combine, timestamp, prettyPrint, colorize, simple, errors, splat, json } = format;
+const {
+  combine,
+  timestamp,
+  prettyPrint,
+  colorize,
+  simple,
+  errors,
+  splat,
+  json,
+} = format;
 
 const logger = createLogger({
   level: 'info',
   format: combine(
-    timestamp({
-      format: 'YYYY-MM-DD HH:mm:ss',
-    }),
+    timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     errors({ stack: true }),
     splat(),
     json(),
     prettyPrint()
   ),
   transports: [
-    new transports.File({ filename: './logger/logger.info.log', level: 'info' }),
-    new transports.File({ filename: './logger/logger.error.log', level: 'error' }),
+    new transports.File({
+      filename: './logger/logger.info.log',
+      level: 'info',
+    }),
+    new transports.File({
+      filename: './logger/logger.error.log',
+      level: 'error',
+    }),
   ],
 });
 
@@ -26,11 +39,7 @@ const logger = createLogger({
 // });
 
 if (process.env.NODE_ENV !== 'production') {
-  logger.add(
-    new transports.Console({
-      format: combine(colorize(), simple()),
-    })
-  );
+  logger.add(new transports.Console({ format: combine(colorize(), simple()) }));
 }
 
 module.exports = { logger };

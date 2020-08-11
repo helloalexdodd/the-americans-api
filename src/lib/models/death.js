@@ -2,11 +2,31 @@ const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
 const deathSchema = new Schema({
-  characterName: { type: Schema.Types.ObjectId, ref: 'Character', require: true },
-  murdereredBy: { type: Schema.Types.ObjectId, ref: 'Character', require: true },
-  murderedByAlias: { type: Schema.Types.ObjectId, ref: 'Alias', require: true },
-  episode: { type: Schema.Types.ObjectId, ref: 'Episode', require: true },
-  season: { type: Schema.Types.ObjectId, ref: 'Season', require: true },
+  characterName: {
+    type: Schema.Types.ObjectId,
+    ref: 'Character',
+    require: true,
+  },
+  murdereredBy: {
+    type: Schema.Types.ObjectId,
+    ref: 'Character',
+    require: true,
+  },
+  murderedByAlias: {
+    type: Schema.Types.ObjectId,
+    ref: 'Alias',
+    require: true,
+  },
+  episode: {
+    type: Schema.Types.ObjectId,
+    ref: 'Episode',
+    require: true,
+  },
+  season: {
+    type: Schema.Types.ObjectId,
+    ref: 'Season',
+    require: true,
+  },
 });
 
 const Death = model('Death', deathSchema);

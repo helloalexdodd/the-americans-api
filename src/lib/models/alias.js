@@ -14,7 +14,7 @@ const validateAlias = (req) => {
   const schema = Joi.object({
     name: Joi.string().require(),
     occupation: Joi.string(),
-    characterPlayedBy: Joi.Joi.objectId(),
+    characterPlayedBy: Joi.objectId(),
     murders: Joi.array.items(Joi.objectId()),
   });
   return schema.validate(req);

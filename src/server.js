@@ -15,6 +15,8 @@ if (process.env.NODE_ENV !== 'production') app.use('/*', getSiteMap);
 
 const port = config.get('port') || 4248;
 
-app.get('/api/v1', (req, res) => res.send('Welcome to The Americans API! 🇷🇺🌏🌎🇺🇸'));
+app.get('/api/v1', (req, res) =>
+  res.send('Welcome to The Americans API! 🇷🇺🌏🌎🇺🇸')
+);
 
 app.listen(port, () => logger.info(`App initialized on port ${port}...`));

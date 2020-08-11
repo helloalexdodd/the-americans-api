@@ -4,15 +4,20 @@ const { Alias } = require('models/alias');
 const { Character } = require('models/character');
 const { Death } = require('models/death');
 
-module.exports = async (...args) => {
-  const { characterName, murderedBy, murderedByAlias, episode, season } = args;
+module.exports = async (props) => {
+  const { characterName, murderedBy, murderedByAlias, episode, season } = props;
 
-  console.log(args);
+  let deathEpisodes = await Episode.find({ numberOverall: episode });
+  if (!deathEpisodes) deathEpisodes = [];
 
-  const deathEpisodes = await Episode.find({ numberOverall: episode });
-  const deathAlias = await Alias.find({ name: murderedByAlias });
-  // const deathSeason = await Season.find({ seasonNumber: season });
-  const deathCharacter = await Character.find({ name: murderedBy });
+  let deathAlias = await Alias.find({ name: murderedByAlias });
+  if (!deathAlias) deathAlias = [];
+
+  let deathSeason = await Season.find({ seasonNumber: season });
+  if (!deathSeason) deathSeason = [];
+
+  let deathCharacter = await Character.find({ name: murderedBy });
+  if (!deathCharacter) deathCharacter = [];
 
   // console.log(characterName);
   // console.log(deathEpisodes);
@@ -25,9 +30,9 @@ module.exports = async (...args) => {
     murderedBy: deathCharacter._id,
     murderedByAlias: deathAlias._id,
     episode: deathEpisodes._id,
-    // season: deathSeason._id,
+    season: deathSeason._id,
   });
 
-  // await death.save();
-  // return death;
+  await death.save();
+  return death;
 };

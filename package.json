@@ -11,7 +11,8 @@
     "start": "node src/server.js",
     "lint": "eslint . --ext .js",
     "postinstall": "link-module-alias",
-    "preinstall": "command -v link-module-alias && link-module-alias clean || true"
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "pretty-quick": "pretty-quick"
   },
   "_moduleAliases": {
     "src": "./src",
@@ -68,6 +69,7 @@
     "lint-staged": "^10.2.11",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "supertest": "^4.0.2"
   },
   "jest": {
@@ -78,7 +80,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && lint-staged",
+      "pre-commit": "pretty-quick --staged && npm run lint --fix",
       "pre-push": "npm run test"
     }
   },
