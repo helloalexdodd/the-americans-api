@@ -1,12 +1,10 @@
 const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
-const { characterSchema } = require('./character');
-
 const aliasSchema = new Schema({
   name: { type: String, require: true },
   occupation: String,
-  characterPlayedBy: { type: characterSchema, require: true },
+  characterPlayedBy: { type: Schema.Types.ObjectId, require: true },
   murders: [{ type: Schema.Types.ObjectId, ref: 'Death' }],
 });
 
@@ -16,7 +14,7 @@ const validateAlias = (req) => {
   const schema = Joi.object({
     name: Joi.string().require(),
     occupation: Joi.string(),
-    characterPlayedBy: Joi.array.items(Joi.objectId()).require(),
+    characterPlayedBy: Joi.Joi.objectId(),
     murders: Joi.array.items(Joi.objectId()),
   });
   return schema.validate(req);

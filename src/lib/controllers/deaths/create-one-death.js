@@ -1,3 +1,7 @@
-const createOneDeath = (req, res) => res.send('There is no death here...');
+const createOneDeath = require('services/deaths/create-one-death');
 
-module.exports = { createOneDeath };
+module.exports = async (req, res) => {
+  const args = { ...req.body };
+  const death = await createOneDeath(args);
+  res.send(death);
+};

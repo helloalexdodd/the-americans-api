@@ -11,8 +11,8 @@ const characterSchema = new Schema({
   occupation: String,
   quote: String,
   dies: { type: Boolean, default: false },
-  murders: [{ type: Schema.Types.ObjectId, ref: 'Death', default: null }],
-  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias', default: null }],
+  murders: [{ type: Schema.Types.ObjectId, ref: 'Death', default: [] }],
+  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias', default: [] }],
   allegiance: String,
   image: { type: String },
   isInformant: { type: Boolean, default: false },
@@ -20,15 +20,24 @@ const characterSchema = new Schema({
   episodeCount: { type: Number },
   firstAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
   lastAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
+  episodes: [{ type: Schema.Types.ObjectId, ref: 'Episodes', require: true }],
 });
 
-characterSchema.methods.getEpisodes = (characterId) => Episode.find({ _id: characterId });
+characterSchema.methods.getEpisodes = (characterId) => {
+  return Episode.find({ _id: characterId });
+};
 
-characterSchema.methods.getDeaths = () => this.murders.map(({ _id }) => Death.find({ _id }));
+characterSchema.methods.getDeaths = () => {
+  return this.murders.map(({ _id }) => Death.find({ _id }));
+};
 
-characterSchema.methods.getAlias = () => this.alias.map(({ _id }) => Alias.find({ _id }));
+characterSchema.methods.getAlias = () => {
+  return this.alias.map(({ _id }) => Alias.find({ _id }));
+};
 
-characterSchema.methods.getSeasons = (characterId) => Season.find({ _id: characterId });
+characterSchema.methods.getSeasons = (characterId) => {
+  return Season.find({ _id: characterId });
+};
 
 const Character = model('Character', characterSchema);
 
@@ -45,8 +54,9 @@ const validateCharacter = (req) => {
     isInformant: Joi.boolean(),
     isMailRobot: Joi.boolean(),
     episodeCount: Joi.number(),
-    firstAppearance: Joi.objectId(),
-    lastAppearance: Joi.objectId(),
+    firstAppearance: Joi.string(),
+    lastAppearance: Joi.string(),
+    episodes: Joi.array().items(Joi.string()),
   });
   return schema.validate(req);
 };

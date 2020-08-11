@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
-const { characterSchema, Character } = require('./character');
 const { Death } = require('./death');
 const { Alias } = require('./alias');
 
@@ -9,11 +8,11 @@ const episodeSchema = new Schema({
   title: { type: String, required: true },
   numberOverall: { type: Number, required: true },
   numberInSeason: { type: Number, required: true },
-  season: { type: Schema.Types.ObjectId, ref: 'Season', required: true },
-  charactersInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Character', required: true }],
+  season: { type: Schema.Types.ObjectId, ref: 'Season' },
+  charactersInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
   deathsInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Death' }],
   aliasInEpisode: [{ type: Schema.Types.ObjectId, ref: 'Alias' }],
-  previouslyOnTheAmericansVoice: { type: characterSchema, required: true },
+  previouslyOnTheAmericansVoice: { type: Schema.Types.ObjectId, ref: 'Character' },
   dateAired: { type: Date, required: true },
 });
 

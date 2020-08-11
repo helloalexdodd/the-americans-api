@@ -11,6 +11,7 @@ module.exports = {
   plugins: ['prettier', 'no-loops'],
   rules: {
     'prettier/prettier': ['error'],
+    'no-underscore-dangle': [2, { allow: ['_id'] }],
   },
   settings: {
     'import/resolver': {

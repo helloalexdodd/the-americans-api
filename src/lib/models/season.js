@@ -1,28 +1,26 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
-const { characterSchema, Character } = require('./character');
-const { deathSchema, Death } = require('./death');
-const { aliasSchema, Alias } = require('./alias');
-const { episodeSchema, Episode } = require('./episode');
-
-const seasonSchema = new mongoose.Schema({
+const seasonSchema = new Schema({
   seasonNumber: { type: Number, required: true },
-  episodesInSeason: [{ type: episodeSchema, require: true }],
-  charactersInSeason: [{ type: characterSchema, require: true }],
-  charactersIntroduced: [{ type: characterSchema, require: true }],
-  deathsInSeason: [{ type: deathSchema, require: true }],
-  aliasInSeason: [{ type: aliasSchema, require: true }],
+  episodesInSeason: [{ type: Schema.Types.ObjectId, ref: 'Episode', require: true }],
+  charactersInSeason: [{ type: Schema.Types.ObjectId, ref: 'Character', require: true }],
+  charactersIntroduced: [{ type: Schema.Types.ObjectId, ref: 'Character', require: true }],
+  deathsInSeason: [{ type: Schema.Types.ObjectId, ref: 'Death', require: true }],
+  aliasInSeason: [{ type: Schema.Types.ObjectId, ref: 'Alias', require: true }],
 });
 
 seasonSchema.methods.getCharacter = () =>
   this.charactersInSeason.map(({ _id }) => Character.find({ _id }));
+
 seasonSchema.methods.getEpisode = () =>
   this.episodesInSeason.map(({ _id }) => Episode.find({ _id }));
+
 seasonSchema.methods.getDeaths = () => this.deathsInSeason.map(({ _id }) => Death.find({ _id }));
+
 seasonSchema.methods.getAlias = () => this.aliasInSeason.map(({ _id }) => Alias.find({ _id }));
 
-const Season = mongoose.model('Season', seasonSchema);
+const Season = model('Season', seasonSchema);
 
 const validateSeason = (req) => {
   const schema = Joi.object({
