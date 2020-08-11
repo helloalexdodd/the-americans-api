@@ -473,3 +473,12 @@
     '    at suppressedCallback (fs.js:211:5)\n' +
     '    at FSReqCallback.oncomplete (fs.js:155:23)'
 }
+{
+  level: 'error',
+  timestamp: '2020-08-09 16:37:52',
+  message: 'File does not exist. Check to make sure the file path to your csv is correct.',
+  stack: 'Error: File does not exist. Check to make sure the file path to your csv is correct.\n' +
+    '    at /Users/adodd/Documents/Learning/the-americans-api/node_modules/csvtojson/v2/Converter.js:81:37\n' +
+    '    at suppressedCallback (fs.js:211:5)\n' +
+    '    at FSReqCallback.oncomplete (fs.js:155:23)'
+}

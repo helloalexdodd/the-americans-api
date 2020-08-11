@@ -1,35 +1,34 @@
 const { Schema, model } = require('mongoose');
 const Joi = require('joi');
 
+const { Episode } = require('./episode');
+const { Death } = require('./death');
+const { Alias } = require('./alias');
+const { Season } = require('./season');
+
 const characterSchema = new Schema({
-  name: {
-    type: String,
-    require: true,
-  },
+  name: { type: String, require: true },
   occupation: String,
   quote: String,
-  murders: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
-  dies: {
-    type: Boolean,
-    default: false,
-  },
-  informants: [{ type: Schema.Types.ObjectId, ref: 'Character' }],
-  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias' }],
-  isMailRobot: {
-    type: Boolean,
-    default: false,
-  },
-  episodes: [{ type: Schema.Types.ObjectId, ref: 'Episode' }],
-  seasons: [{ type: Schema.Types.ObjectId, ref: 'Season' }],
-  image: {
-    type: String,
-    required: true,
-  },
-  isInformant: {
-    type: Boolean,
-    required: true,
-  },
+  dies: { type: Boolean, default: false },
+  murders: [{ type: Schema.Types.ObjectId, ref: 'Death', default: null }],
+  alias: [{ type: Schema.Types.ObjectId, ref: 'Alias', default: null }],
+  allegiance: String,
+  image: { type: String },
+  isInformant: { type: Boolean, default: false },
+  isMailRobot: { type: Boolean, default: false },
+  episodeCount: { type: Number },
+  firstAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
+  lastAppearance: { type: Schema.Types.ObjectId, ref: 'Episode' },
 });
+
+characterSchema.methods.getEpisodes = (characterId) => Episode.find({ _id: characterId });
+
+characterSchema.methods.getDeaths = () => this.murders.map(({ _id }) => Death.find({ _id }));
+
+characterSchema.methods.getAlias = () => this.alias.map(({ _id }) => Alias.find({ _id }));
+
+characterSchema.methods.getSeasons = (characterId) => Season.find({ _id: characterId });
 
 const Character = model('Character', characterSchema);
 
@@ -38,15 +37,16 @@ const validateCharacter = (req) => {
     name: Joi.string().required(),
     occupation: Joi.string(),
     quote: Joi.string(),
-    murders: Joi.array().items(Joi.objectId()),
     dies: Joi.boolean(),
-    informants: Joi.array().items(Joi.objectId()),
+    murders: Joi.array().items(Joi.objectId()),
     alias: Joi.array().items(Joi.objectId()),
-    isInformant: Joi.boolean().required(),
+    allegiance: Joi.string(),
+    image: Joi.string(),
+    isInformant: Joi.boolean(),
     isMailRobot: Joi.boolean(),
-    image: Joi.string().required(),
-    episodes: Joi.array().items(Joi.objectId()),
-    seasons: Joi.array().items(Joi.objectId()),
+    episodeCount: Joi.number(),
+    firstAppearance: Joi.objectId(),
+    lastAppearance: Joi.objectId(),
   });
   return schema.validate(req);
 };

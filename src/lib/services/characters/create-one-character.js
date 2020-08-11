@@ -1,7 +1,7 @@
 const { Character } = require('models/character');
 
-module.exports = async (name, occupation, quote, isInformant, image) => {
-  const character = new Character({ name, occupation, quote, isInformant, image });
+module.exports = async (...keys) => {
+  const character = new Character({ ...keys });
   await character.save();
   return character;
 };

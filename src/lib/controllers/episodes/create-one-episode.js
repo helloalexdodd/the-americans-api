@@ -2,24 +2,28 @@ const createOneEpisode = require('services/episodes/create-one-episode');
 
 module.exports = async (req, res) => {
   const {
-    episodeInSeason,
     title,
+    numberOverall,
+    numberInSeason,
     season,
-    characters,
     charactersIntroduced,
+    charactersInEpisode,
+    deathsInEpisode,
+    aliasInEpisode,
     previouslyOnTheAmericansVoice,
     dateAired,
   } = req.body;
-
   const episode = await createOneEpisode(
-    episodeInSeason,
     title,
+    numberOverall,
+    numberInSeason,
     season,
-    characters,
     charactersIntroduced,
+    charactersInEpisode,
+    deathsInEpisode,
+    aliasInEpisode,
     previouslyOnTheAmericansVoice,
     dateAired
   );
-
   res.send(episode);
 };

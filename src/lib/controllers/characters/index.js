@@ -3,7 +3,6 @@ const { getOneCharacter } = require('./get-one-character');
 const createOneCharacter = require('./create-one-character');
 const { updateOneCharacter } = require('./update-one-character');
 const { getEpisodesByCharacter } = require('./get-episodes-by-character');
-const { getInformantsByCharacter } = require('./get-informants-by-character');
 const { getAliasByCharacter } = require('./get-alias-by-character');
 
 module.exports = {
@@ -12,6 +11,5 @@ module.exports = {
   createOneCharacter,
   updateOneCharacter,
   getEpisodesByCharacter,
-  getInformantsByCharacter,
   getAliasByCharacter,
 };
