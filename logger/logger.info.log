@@ -42388,3 +42388,13 @@
   level: 'info',
   timestamp: '2020-08-11 18:55:55'
 }
+{
+  message: 'App initialized on port 5000...',
+  level: 'info',
+  timestamp: '2020-08-13 21:38:28'
+}
+{
+  message: 'Connected to mongodb://localhost/the-americans-api...',
+  level: 'info',
+  timestamp: '2020-08-13 21:38:28'
+}
